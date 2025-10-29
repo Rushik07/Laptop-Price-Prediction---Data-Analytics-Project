@@ -1,15 +1,15 @@
-#💻 Laptop Price Prediction — Machine Learning Project
+# 💻 Laptop Price Prediction — Machine Learning Project
 Overview:
 This project predicts laptop prices based on their hardware specifications using various machine learning regression models.
 The dataset includes 1300+ laptop records with features like CPU, GPU, RAM, screen resolution, and storage configuration.
 The objective was to build a predictive model that accurately estimates a laptop’s price by analyzing its specifications and hardware attributes.
 
-#⚙️ Tech Stack
+# ⚙️ Tech Stack
 Languages: Python
 Libraries: NumPy, Pandas, Matplotlib, Seaborn, Scikit-learn, XGBoost
 Tools: Jupyter Notebook
 
-#Dataset:
+# Dataset:
 Key columns:
 Company – Manufacturer brand (e.g., Dell, HP, Apple)
 TypeName – Category (Notebook, Ultrabook, Gaming, etc.)
@@ -21,7 +21,7 @@ OpSys – Operating System
 Weight – Device weight in kilograms
 Price – Target variable (in INR)
 
-#🔧 Data Preprocessing
+# 🔧 Data Preprocessing
 Removed null and duplicate records.
 Extracted and cleaned numerical features from text (e.g., RAM, Weight, Resolution).
 Derived new engineered features:
@@ -54,12 +54,7 @@ The Random Forest Regressor achieved the best performance with an R² score of 0
 Correlation heatmaps between engineered features and price
 Observed strong positive correlation between RAM, SSD size, and Price.
 
-#📈 Results & Insights
+# 📈 Results & Insights
 Feature engineering (especially ppi and SSD extraction) greatly improved accuracy.
 High-end components like Intel i7, SSD > 256GB, and IPS display were strong price indicators.
 Light-weight laptops and gaming categories exhibited higher variance in pricing.
-
-#🔮 Future Improvements
-Implement hyperparameter tuning (GridSearchCV / RandomizedSearchCV).
-Try deep learning regression models using TensorFlow or PyTorch.
-Deploy a simple Streamlit app for interactive predictions.
